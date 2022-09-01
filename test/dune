@@ -10,13 +10,8 @@
         test_opt_req
         test_term_dups
         test_with_used_args
-        groups
         darcs_ex)
  (libraries cmdliner))
-
-(cram
- (applies_to groups)
- (deps ./groups.exe))
 
 (cram
  (applies_to darcs)
