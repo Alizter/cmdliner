@@ -13,6 +13,21 @@
         darcs_ex)
  (libraries cmdliner))
 
+(alias
+ (name runtest)
+ (deps test_man.exe
+       test_man_utf8.exe
+       test_pos.exe
+       test_nest.exe
+       test_pos_rev.exe
+       test_pos_all.exe
+       test_pos_left.exe
+       test_pos_req.exe
+       test_opt_req.exe
+       test_term_dups.exe
+       test_with_used_args.exe
+       darcs_ex.exe))
+
 (cram
  (applies_to darcs)
  (deps ./darcs_ex.exe))
